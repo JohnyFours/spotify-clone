@@ -22,7 +22,7 @@ const Library: React.FC<LibraryProps> = ({
   const { user, subscription } = useUser();
   const uploadModal = useUploadModal();
   const authModal = useAuthModal();
-  const subscribeModal = useSubscribeModal();
+  // const subscribeModal = useSubscribeModal();
 
   const onPlay = useOnPlay(songs);
 
@@ -32,7 +32,7 @@ const Library: React.FC<LibraryProps> = ({
     }
 
     if (!subscription) {
-      return subscribeModal.onOpen();
+      // return subscribeModal.onOpen();
     }
 
     return uploadModal.onOpen();
